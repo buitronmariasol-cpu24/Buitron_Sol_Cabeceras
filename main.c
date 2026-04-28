@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "sumar.h"
+#include "resta.h"
 
 int main(int argc, char const * argv[])
 {
@@ -8,6 +9,9 @@ int main(int argc, char const * argv[])
     scanf("%d", &a);
     printf("Ingrese 2do numero: ");
     scanf("%d", &b);
-    printf("La suma es: %d", sumar(a,b));
+    int resultado = sumar(a, b);
+    printf("La suma es: %d\n", sumar(a,b));
+    int resultr = resta(a, b);
+    printf("La resta es: %d\n", resultr);
     return 0;
 }
